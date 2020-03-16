@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main()
+{
+    int n, row, i, j;
+
+    cout << " Enter row: ";
+    cin >> n;
+
+    row = n + 1;
+
+    int Arr[row][row] = {};
+
+
+    for(i = 1; i <= n; i++)
+    {
+        Arr[i][1] = 1;
+        for(j = 1; j <= i; j++)
+	{
+            cout << Arr[i][j] << "   ";
+            Arr[i][j + 1] = Arr[i - 1][j] + Arr[i - 1][j + 1];
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
