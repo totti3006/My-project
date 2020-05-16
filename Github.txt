@@ -1,8 +1,10 @@
-git init 
+git init //create a new local respository
 git clone
 git pull
-git status
+git status //check the status of file 
 
-git add
-git commit -m "commit to repository"
+git add " " //add file that want to commit
+git add .
+git commit -m "commit to repository" //commit to local respository
+git commit -a -m "commit to respository" //add and commit 
 git push
